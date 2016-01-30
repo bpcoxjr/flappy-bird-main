@@ -25,8 +25,6 @@ BirdGraphicsComponent.prototype.draw = function(context) {
     //context.fillStyle is (this defaults to black unless changed).
     //context.fill();
 
-    var canvas = document.getElementById("main-canvas");
-    var context = canvas.getContext("2d");
     var image = document.getElementById("bird");
     context.scale(-1, 1);
     context.rotate(Math.PI);

@@ -2,8 +2,6 @@ var GroundGraphics = require("../components/graphics/ground");
 var physicsComponent = require("../components/physics/physics");
 
 var Ground = function() {
-    //console.log("Creating Bird entity");
-
     var physics = new physicsComponent.PhysicsComponent(this);
     physics.position.y = 0;
     physics.acceleration.y = -0.75;

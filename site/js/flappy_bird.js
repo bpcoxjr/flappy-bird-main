@@ -1,6 +1,6 @@
- Math.randomRange = function(min,max) {
+Math.randomRange = function(min,max) {
   	  return min + (Math.random() * (max-min));
-  	};
+};
 
 var graphicsSystem = require('./systems/graphics');
 var physicsSystem = require('./systems/physics');
@@ -14,13 +14,12 @@ var bird = require('./entities/bird');
 var FlappyBird = function() {
 
     this.entities = [new bird.Bird()];
-    //this.entities = [new bird.Bird(), new pipe.Pipe(p1Y), new pipe.Pipe(p2Y,true)];
     this.graphics = new graphicsSystem.GraphicsSystem(this.entities);
     this.physics = new physicsSystem.PhysicsSystem(this.entities);
     this.input = new inputSystem.InputSystem(this.entities);
     this.pipes = new pipeSystem.PipeSystem(this.entities);
 
-   
+
 };
 
 FlappyBird.prototype.run = function() {

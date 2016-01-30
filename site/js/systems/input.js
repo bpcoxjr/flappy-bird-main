@@ -6,7 +6,7 @@ var InputSystem = function(entities) {
 };
 
 InputSystem.prototype.run = function() {
-    this.canvas.addEventListener('click', this.onClick.bind(this));
+    document.body.addEventListener('click', this.onClick.bind(this));
     document.body.addEventListener('keydown', this.onkeydown.bind(this));
 };
 
