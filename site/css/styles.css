@@ -10,3 +10,11 @@ html, body {
 	background-image: url("../img/background.png");
 	background-size: contain;
 }
+
+#offcanvas {
+	position:fixed;
+	top:0;
+	left:0;
+
+	background:#649fd9;
+}
