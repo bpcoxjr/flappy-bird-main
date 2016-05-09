@@ -15,4 +15,4 @@ ground.tileW = groundImg.width;
 ground.y = h-groundImg.height;
 };
 
-exports..GroundGraphicsComponent = GroundGraphicsComponent;
+exports.GroundGraphicsComponent = GroundGraphicsComponent;

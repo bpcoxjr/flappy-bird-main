@@ -1308,16 +1308,24 @@ var FlappyBird = function() {
   this.pipes = new pipeSystem.PipeSystem(this.entities);
 
   //Display game instructions when "How to Play" button is clicked
-  var howToButton = document.getElementById('howtoplay');
+  $('#howtoplay').click(function(){
+    $('#instructions').fadeIn(500);
+  });
+
+  /*var howToButton = document.getElementById('howtoplay');
   howToButton.onclick = function(){
     $('#instructions').fadeIn(500);
-  };
+  };*/
 
   //Close game instructions when "Got it!" button is clicked
-  var gotItButton = document.getElementById('gotit');
+  $('#gotit').click(function(){
+    $('#instructions').fadeOut(500);
+  });
+
+  /*var gotItButton = document.getElementById('gotit');
   gotItButton.onclick = function(){
     $('#instructions').fadeOut(500);
-  }
+  }*/
 
   this.pipes.on('passed',function(score){
     that.score += 1;
