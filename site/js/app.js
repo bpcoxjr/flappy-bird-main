@@ -1312,20 +1312,10 @@ var FlappyBird = function() {
     $('#instructions').fadeIn(500);
   });
 
-  /*var howToButton = document.getElementById('howtoplay');
-  howToButton.onclick = function(){
-    $('#instructions').fadeIn(500);
-  };*/
-
   //Close game instructions when "Got it!" button is clicked
   $('#gotit').click(function(){
     $('#instructions').fadeOut(500);
   });
-
-  /*var gotItButton = document.getElementById('gotit');
-  gotItButton.onclick = function(){
-    $('#instructions').fadeOut(500);
-  }*/
 
   this.pipes.on('passed',function(score){
     that.score += 1;
@@ -1444,7 +1434,7 @@ exports.minVerticalVelocity = -1;
 exports.maxVerticalVelocity = 0;
 exports.freakOutEvery = 0;
 exports.displayFPS = false;
-exports.collisionDetectionPerSecond = 12;
+exports.collisionDetectionPerSecond = 6;
 
 },{}],14:[function(require,module,exports){
 var EventEmitter = require('events');
